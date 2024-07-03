@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="1codigo.js" defer></script>
+    <link rel="stylesheet" href="1estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>CineSenai</h1>
+        
+        <nav id="nav-bar">
+            <a class="nav" href="michel.html">Filmes</a>
+            <a class="nav" href="guilherme.html">Principal</a>
+            <a class="nav" href="">Vilões</a>
+        </header>
+        
+    </nav>
+    <div>Viloes</div>
+    <button id="cadastrar" onclick="cadastrar()">Adicionar personagem</button>
+
+    <form onsubmit="salvarVilao(event)">
+        <label for="id_imagem">URL da foto do personagem</label>
+        <input type="url" id="id_imagem" name="imagem">
+
+        <label for="id_personagem">Personagem</label>
+        <input type="text" id="id_personagem" name="personagem">
+
+        <label for="id_filme">Filme</label>
+        <input type="text" id="id_filme" name="filme">
+
+        <label for="id_ator">Ator</label>
+        <input type="text" id="id_ator" name="ator">
+
+        <label for="id_descricao">Descrição</label>
+        <input type="text" id="id_descricao" name="descricao">
+
+        <label for="id_habilidade">habilidade</label>
+        <input type="text" id="id_habilidade" name="habilidade">
+        <button id="enviar" type="submit">enviar</button>
+    </form>
+   
+    <main>
+        <div id="div1"></div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
